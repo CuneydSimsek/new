@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [CrossBrowser Suite Test]">
+  <test thread-count="5" name="Firefox Login Test(failed)">
+    <parameter name="browserName" value="Firefox"/>
+    <classes>
+      <class name="testNG_crossBrowser_Parameter.LoginTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="loginTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testNG_crossBrowser_Parameter.LoginTest -->
+    </classes>
+  </test> <!-- Firefox Login Test(failed) -->
+</suite> <!-- Failed suite [CrossBrowser Suite Test] -->

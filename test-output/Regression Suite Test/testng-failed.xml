@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Regression Suite Test]">
+  <test thread-count="5" name="IT Career Suite Tests(failed)">
+    <groups>
+      <run>
+        <include name="smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testNG_Grouping.ShopTest">
+        <methods>
+          <include name="setupMethod"/>
+          <include name="tearDown"/>
+          <include name="dropdownBox" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testNG_Grouping.ShopTest -->
+    </classes>
+  </test> <!-- IT Career Suite Tests(failed) -->
+</suite> <!-- Failed suite [Regression Suite Test] -->

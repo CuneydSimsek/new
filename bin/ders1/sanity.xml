@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="CrossBrowser Suite Test" parallel="tests">
+
+	<test name="Chrome Login Test">
+
+		<parameter name="browserName" value="Chrome" />
+
+		<classes>
+			<class name="deneme1.LoginTest" />
+		</classes>
+	</test>
+
+	
+	<test name="Firefox Login Test">
+
+		<parameter name="browserName" value="Firefox" />
+
+		<classes>
+			<class name="deneme1.LoginTest" />
+		</classes>
+	</test>
+
+
+
+</suite>      

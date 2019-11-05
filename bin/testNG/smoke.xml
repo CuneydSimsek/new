@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+
+<suite  name="Default suite">
+<test name="Default test">
+ 
+ <classes>
+      <class name="newJ.Before_After_Method">
+       <methods>
+          <include name="loginTest"/>
+          <!-- <include name="dropdownBox"/>  -->
+        </methods> 
+      </class> <!-- testNG.L01B_Before_After_Method -->
+    </classes>
+  </test> <!-- Default test -->
+   </suite> <!-- Default suite -->
