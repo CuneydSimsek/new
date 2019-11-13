@@ -8,6 +8,8 @@ import org.testng.annotations.Test;
 public class ShopTest extends TestBase {
 
 	@Test(dataProvider = "shop", groups = {"smoke", "regression"}, priority=4)
+	
+	
 	public void dropdownBox(String selOpt) throws InterruptedException {
 		
 		System.out.println("Now in Shop TEST....");

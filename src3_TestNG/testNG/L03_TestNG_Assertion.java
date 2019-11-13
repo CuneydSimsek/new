@@ -18,28 +18,38 @@ public class L03_TestNG_Assertion {
 	public void testHomePage()
 	{
 		String expectedTitle = "My Site Title";
+		
 		String actualTitle ="My Site Title";
 	
 		//Assert.assertEquals(actual, expected, Error);
 		//Assert.assertTrue(condition, Error);
-		
 		//Assert.fail(Error); //
 		
+		// 1) actualTitle, expectedTitle
 		
-		//Assert.assertEquals(actualTitle, expectedTitle, "Title is wrong"); 
+		// Actual title Expected Title ile match olmazsa Console'da 'Title is wrong' yazacak
 		
+		// Assert.assertEquals(actualTitle, expectedTitle, "Title is wrong"); //
+		
+		
+		// 2) expectedTitle equals expectedTitle (Asagidaki if Condition ile calisirsa hata verir)
 
 		//Assert.assertTrue(expectedTitle.equals(expectedTitle), "Title is wrong");
 		
-		//Assert.assertTrue(actualTitle.contains("My Site"), "Title is wrong");
+		// 3) Actual Title Contain My Site
+		
+		Assert.assertTrue(actualTitle.contains("My Site"), "Title is wrong");
 	
 		
-		  if(!(actualTitle.equals(expectedTitle))) {
-		  
-		  
-		  Assert.fail("Title is wrong"); }
+		//if(!(actualTitle.equals(expectedTitle))) {
+			
+		// if(!(expectedTitle.equals(expectedTitle))) {
+		 
+		Assert.fail("Title is wrong"); 
+		 
+		 }
 		
-		}
+		//}
 	
 
 	@AfterMethod

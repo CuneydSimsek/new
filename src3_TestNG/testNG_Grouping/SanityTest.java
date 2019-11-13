@@ -10,7 +10,10 @@ public class SanityTest {
 	
 	
 	@Test(groups = {"sanity", "regression"}, priority=2)
-	public void runSanity() {
+	
+		public void runSanity() {
+		
+		
 		System.out.println("Sanity Test");
 		
 		}

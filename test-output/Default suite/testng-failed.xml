@@ -3,13 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="myDataProvider.MyShopTest">
+      <class name="testNG_crossBrowser_Parameter.LoginTest">
         <methods>
-          <include name="dropdownBox"/>
           <include name="tearDown"/>
-          <include name="setupMethod"/>
+          <include name="loginTest"/>
         </methods>
-      </class> <!-- myDataProvider.MyShopTest -->
+      </class> <!-- testNG_crossBrowser_Parameter.LoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -2,10 +2,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Regression Suite Test" parallel="none">
 
-	<test name="IT Career Suite Tests" preserve-order="true">
+	<test name="IT Career Suite" preserve-order="true">
 
 		
 		<groups>
+			
 			<define name="all">
 				<include name="sanity"></include>
 				<include name="smoke"></include>
@@ -13,7 +14,8 @@
 			</define>
 
 			<run>
-				<include name="smoke"></include>
+				<include name="regression"></include>
+								
 			</run>
 
 		</groups>

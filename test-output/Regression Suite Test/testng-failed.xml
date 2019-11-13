@@ -4,15 +4,13 @@
   <test thread-count="5" name="IT Career Suite Tests(failed)">
     <groups>
       <run>
-        <include name="smoke"/>
+        <exclude name="sanity"/>
       </run>
     </groups>
     <classes>
       <class name="testNG_Grouping.ShopTest">
         <methods>
-          <include name="setupMethod"/>
-          <include name="tearDown"/>
-          <include name="dropdownBox" invocation-numbers="0"/>
+          <include name="dropdownBox" invocation-numbers="0 1 2 3"/>
         </methods>
       </class> <!-- testNG_Grouping.ShopTest -->
     </classes>

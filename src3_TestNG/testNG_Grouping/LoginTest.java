@@ -7,7 +7,9 @@ import org.testng.annotations.Test;
 public class LoginTest extends TestBase {
 
 
-	@Test(dataProvider="login", groups = {"sanity", "regression"}, priority=3)
+	@Test(dataProvider="login", groups = {"sanity", "regression"}, priority=3) // loginTest bu iki grubun icinde
+	
+	
 	public void loginTest(String username, String password) throws InterruptedException {
 
 		System.out.println("Now in login TEST....");

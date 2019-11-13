@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression Suite Test" parallel="none">
+
+	<test name="IT Career Suite Tests" preserve-order="true">
+
+		
+		<groups>
+			<define name="all">
+				<include name="sanity"></include>
+				<include name="smoke"></include>
+				<include name="regression"></include>
+			</define>
+
+			<run>
+				<include name="sanity"></include>
+				
+				
+			</run>
+
+		</groups>
+
+
+
+		<classes>
+
+			<class name="testNG_Grouping.SanityTest" />
+
+			<class name="testNG_Grouping.SmokeTest" />
+
+	 		<class name="testNG_Grouping.LoginTest" />
+
+			<class name="testNG_Grouping.ShopTest" />   
+
+
+		</classes>
+	</test>
+
+</suite>      

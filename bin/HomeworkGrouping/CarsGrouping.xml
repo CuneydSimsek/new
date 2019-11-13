@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression Suite Test" parallel="none">
+
+	<test name="Cars Grouping Testing" preserve-order="true">
+
+
+		<groups>
+
+			<define name="all">
+				<include name="rose"></include>
+				<include name="daisy"></include>
+				<include name="orchid"></include>
+				<include name="violet"></include>
+				<include name="jasmine"></include>
+			</define>
+
+			<run>
+				<include name="daisy"></include>
+				<include name="orchid"></include>
+				<include name="rose"></include>
+				
+			</run>
+
+		</groups>
+
+
+
+		<classes>
+
+			<class name="HomeworkGrouping.Benz" />
+
+			<class name="HomeworkGrouping.Bmw" />
+
+			<class name="HomeworkGrouping.Buick" />
+
+			<class name="HomeworkGrouping.Fiat" />
+			
+			<class name="HomeworkGrouping.Honda" />
+
+			<class name="HomeworkGrouping.Infinity" />
+
+			<class name="HomeworkGrouping.Lexus" />
+
+			<class name="HomeworkGrouping.Mazda" />
+
+			<class name="HomeworkGrouping.Nissan" />
+
+			<class name="HomeworkGrouping.Toyoto" />
+
+
+
+
+		</classes>
+	</test>
+
+</suite>      

@@ -18,6 +18,7 @@ public class LoginTest {
 	 
 	
 	 @Test
+	
 	 @Parameters("browserName")
 	 
 	 public void loginTest(String browser) throws InterruptedException {
@@ -43,7 +44,8 @@ public class LoginTest {
 		 * else if(browser.equalsIgnoreCase("IE")) {
 		 * System.setProperty("webdriver.ie.driver",
 		 * "C:\\Users\\cuneyt\\Downloads\\IEDriverServer.exe"); driver = new
-		 * InternetExplorerDriver(); }
+		 * InternetExplorerDriver(); 
+		 * }
 		 */
 			else
 			{

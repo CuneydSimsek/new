@@ -33,6 +33,8 @@ public class L03B_LoginTest extends L01D_TestBase {
 		}
 		//Assert Login 
 		Assert.assertTrue(usernameText.equalsIgnoreCase("testuser1"));
+		
+		
 	
 	}
 

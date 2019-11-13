@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression Suite Test" parallel="none">
+
+	<test name="IT Career Suite" preserve-order="true">    		
+		<groups>
+			
+			<define name="all">                   
+			
+				<include name="leylak"></include>
+				<include name="gul"></include>
+			</define>
+
+			<run>                                 
+				<include name="leylak"></include> 
+								
+			</run>
+
+		</groups>
+
+
+
+	      <classes>
+
+			<class name="homeWork.Deneme1" />
+
+			<class name="homeWork.Deneme2" />
+
+	 		<class name="homeWork.Deneme3" />
+	 		
+	 		<class name="homeWork.Deneme4" />
+
+		</classes>
+	</test>
+
+</suite>    
+
+
+  

@@ -1,85 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="52818" started-at="2019-11-02T03:28:01Z" finished-at="2019-11-02T03:28:54Z">
+  <suite name="Default suite" duration-ms="80" started-at="2019-11-13T01:45:51Z" finished-at="2019-11-13T01:45:51Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="52818" started-at="2019-11-02T03:28:01Z" finished-at="2019-11-02T03:28:54Z">
-      <class name="myDataProvider.MyLoginTest">
-        <test-method status="PASS" signature="setupMethod()[pri:0, instance:myDataProvider.MyLoginTest@735b5592]" name="setupMethod" is-config="true" duration-ms="11472" started-at="2019-11-02T03:28:01Z" finished-at="2019-11-02T03:28:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupMethod -->
-        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:myDataProvider.MyLoginTest@735b5592]" name="loginTest" duration-ms="5028" started-at="2019-11-02T03:28:13Z" data-provider="myLogin" finished-at="2019-11-02T03:28:18Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[testuser1]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[SeleniumTestAccount1]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:myDataProvider.MyLoginTest@735b5592]" name="tearDown" is-config="true" duration-ms="4033" started-at="2019-11-02T03:28:18Z" finished-at="2019-11-02T03:28:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setupMethod()[pri:0, instance:myDataProvider.MyLoginTest@735b5592]" name="setupMethod" is-config="true" duration-ms="8602" started-at="2019-11-02T03:28:22Z" finished-at="2019-11-02T03:28:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupMethod -->
-        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:myDataProvider.MyLoginTest@735b5592]" name="loginTest" duration-ms="3890" started-at="2019-11-02T03:28:30Z" data-provider="myLogin" finished-at="2019-11-02T03:28:34Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[testuser2]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[SeleniumTestAccount1]]>
-              </value>
-            </param>
-          </params>
+    <test name="Default test" duration-ms="80" started-at="2019-11-13T01:45:51Z" finished-at="2019-11-13T01:45:51Z">
+      <class name="testNG_crossBrowser_Parameter.LoginTest">
+        <test-method status="FAIL" signature="loginTest(java.lang.String)[pri:0, instance:testNG_crossBrowser_Parameter.LoginTest@9629756]" name="loginTest" duration-ms="0" started-at="2019-11-13T01:45:51Z" finished-at="2019-11-13T01:45:51Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browserName' is required by @Test on method loginTest but has not been marked @Optional or defined
+in C:\Users\cuneyt\AppData\Local\Temp\testng-eclipse-195390885\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browserName' is required by @Test on method loginTest but has not been marked @Optional or defined
+in C:\Users\cuneyt\AppData\Local\Temp\testng-eclipse-195390885\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:290)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:769)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:myDataProvider.MyLoginTest@735b5592]" name="tearDown" is-config="true" duration-ms="4054" started-at="2019-11-02T03:28:34Z" finished-at="2019-11-02T03:28:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setupMethod()[pri:0, instance:myDataProvider.MyLoginTest@735b5592]" name="setupMethod" is-config="true" duration-ms="7395" started-at="2019-11-02T03:28:38Z" finished-at="2019-11-02T03:28:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupMethod -->
-        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:myDataProvider.MyLoginTest@735b5592]" name="loginTest" duration-ms="3876" started-at="2019-11-02T03:28:46Z" data-provider="myLogin" finished-at="2019-11-02T03:28:50Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[testuser3]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[SeleniumTestAccount1]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:myDataProvider.MyLoginTest@735b5592]" name="tearDown" is-config="true" duration-ms="4394" started-at="2019-11-02T03:28:50Z" finished-at="2019-11-02T03:28:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- myDataProvider.MyLoginTest -->
+      </class> <!-- testNG_crossBrowser_Parameter.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
